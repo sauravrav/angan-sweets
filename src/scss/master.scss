@@ -1,0 +1,14 @@
+@import 'helpers/master';
+// base
+// components
+// layouts
+// pages
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    background-color: hotpink;
+    height: 100vh;
+}
