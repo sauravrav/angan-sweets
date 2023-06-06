@@ -46,6 +46,7 @@ const LandingPage = () => {
             className={`slide ${index === activeSlide ? 'active' : ''}`}
           >
             <div className="banner-bg img-wrap">
+               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src={slide.imageSrc} alt="banner" />
             </div>
             <div className="container">
