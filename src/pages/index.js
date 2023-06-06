@@ -1,11 +1,7 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import LandingPage from '@/components/LandingPage'
-import FoodSection from '@/components/FoodSection'
-import SelectSearch from 'react-select-search'
-import { searchData } from '../../data'
 import Navbar from '@/components/Navbar'
+import LandingPage from '@/components/LandingPage'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,6 +15,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
+      <LandingPage />
     </>
   )
 }
