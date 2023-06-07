@@ -1,18 +1,29 @@
-const FoodCard = () => {
+import ButtonTags from './ButtonTags'
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
+
+const MySwal = withReactContent(Swal)
+
+const FoodCard = ({imgSrc, title, priceP, priceK}) => {
+  const handleClick = () => {
+    MySwal.fire({
+      title: <ButtonTags key={'ss'} title={'x.item'}  stat={'active'} />,
+    })
+  }
     return ( 
-        <div className="food-card">
-            <div class="product-img">
+        <div className="food-card" onClick={handleClick}>
+            <div className="product-img">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src='/img/onion-tomato.jpeg' alt="Besal plain laddu" />
+                  <img src={imgSrc} alt="Besal plain laddu" />
             </div>
-            <div class="product-details">
-                  <div class="info-text">
-                    <div class="title">Besan Plain Laddu</div>
-                    <div class="price">NRs. 70/pc</div>
+            <div className="product-details">
+                  <div className="info-text">
+                    <div className="title">{title}</div>
+                    <div className="price">{priceP}</div>
                   </div>
-                  <div class="order-info">
-                    <div class="price">NRs. 1,700/kg</div>
-                    <div class="order-button">Order Now
+                  <div className="order-info">
+                    <div className="price">{priceK}</div>
+                    <div className="order-button">Order Now
                     </div>
                   </div>
             </div>
