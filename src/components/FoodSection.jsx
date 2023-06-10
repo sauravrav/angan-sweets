@@ -1,3 +1,4 @@
+import React from 'react'
 import { useState } from "react";
 import ButtonTags from "./ButtonTags";
 import FoodCard from "./FoodCard";

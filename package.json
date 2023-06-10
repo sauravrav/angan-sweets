@@ -11,11 +11,9 @@
   "dependencies": {
     "eslint": "8.41.0",
     "eslint-config-next": "13.4.4",
-    "framer-motion": "^10.12.16",
     "next": "13.4.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-select-search": "^4.1.6",
     "sass": "^1.62.1",
     "sweetalert2": "^11.7.11",
     "sweetalert2-react-content": "^5.0.7"

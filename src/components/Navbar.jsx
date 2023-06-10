@@ -1,6 +1,4 @@
-import SelectSearch from "react-select-search";
-import { searchData } from "../../data";
-import 'react-select-search/style.css'
+import React from 'react'
 import Image from "next/image";
 import SearchComponent from "./searchComponent";
 import { sweets } from "@/data/sweets";

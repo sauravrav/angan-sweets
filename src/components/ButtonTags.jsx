@@ -1,3 +1,4 @@
+import React from 'react'
 const ButtonTags = ({ title, stat, setActiveButton }) => {
     const handleClick = () => {
       setActiveButton(title);
