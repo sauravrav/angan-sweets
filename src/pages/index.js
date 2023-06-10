@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import Navbar from '@/components/Navbar'
 import LandingPage from '@/components/LandingPage'
 import FoodSection from '@/components/FoodSection'
+import Image from 'next/image'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,6 +19,16 @@ export default function Home() {
       <Navbar />
       <LandingPage />
       <FoodSection />
+      <div className="footer">
+        <div className="logo">
+            <Image src='/img/logo.png' alt='logo' width={100} height={50}/>
+        </div>
+        <div className="footer-items">
+            <li>Menu</li>
+            <li>Privacy Policy</li>
+            <li>Help Center</li>
+        </div>
+    </div>
     </>
   )
 }

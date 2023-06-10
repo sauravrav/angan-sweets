@@ -2,6 +2,17 @@ import { useState } from "react";
 import ButtonTags from "./ButtonTags";
 import FoodCard from "./FoodCard";
 import { sweets } from "@/data/sweets";
+import { bakery } from "@/data/bakery";
+import { cakes } from "@/data/cakes";
+import { chats } from "@/data/chats";
+import { chinese } from "@/data/chinese";
+import { fasts } from "@/data/fast";
+import { namkeens } from "@/data/namkeen";
+import { northIndian } from "@/data/north";
+import { southIndian } from "@/data/south";
+import { snacks } from "@/data/snacks";
+import { sweetbox } from "@/data/sweetbox";
+import { tawaTandoor } from "@/data/tawa";
 
 const foodTags = 
 [
@@ -16,10 +27,22 @@ const foodTags =
     {item:'SOUTH INDIAN', stat: 'not-active'},
     {item:'TAWA & TANDOOR', stat: 'not-active'},
     {item:'CHINESE & CONTINENTAL', stat: 'not-active'},
+    {item:'SWEET BOX', stat: 'not-active'},
 ]
 
 const foodData = [
     {...sweets},
+    {...bakery},
+    {...cakes},
+    {...chats},
+    {...chinese},
+    {...fasts},
+    {...namkeens},
+    {...northIndian},
+    {...southIndian},
+    {...snacks},
+    {...sweetbox},
+    {...tawaTandoor},
     {
         name: 'SNACKS',
         listOfItems: [
