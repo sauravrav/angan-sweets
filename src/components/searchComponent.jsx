@@ -1,4 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
+import OrderModal from './order-modal';
+const MySwal = withReactContent(Swal)
 
 const SearchComponent = ({ items }) => {
   const [query, setQuery] = useState('');
@@ -15,7 +19,7 @@ const SearchComponent = ({ items }) => {
 
   const filterItems = (query) => {
     return items.filter((item) =>
-      item.name.toLowerCase().includes(query.toLowerCase())
+      item.title.toLowerCase().includes(query.toLowerCase())
     );
   };
 
@@ -53,9 +57,17 @@ const SearchComponent = ({ items }) => {
           {searchResults.map((item) => (
             <li
               key={item.id}
-              onClick={() => handleItemClick(item.name)}
+              onClick={() =>    MySwal.fire({
+                html: <OrderModal imgSrc={item.imgSrc} title={item.title} priceP={item.priceP} priceK={item.priceK} />,
+                showConfirmButton: false,
+                customClass: {
+                  popup: 'order-modal',
+                },
+                width: 1000,
+                showCloseButton: true,
+              }).then(r => {})}
             >
-              {item.name}
+              {item.title}
             </li>
           ))}
         </ul>

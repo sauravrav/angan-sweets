@@ -7,7 +7,7 @@ const MySwal = withReactContent(Swal)
 const FoodCard = ({imgSrc, title, priceP, priceK}) => {
   const handleClick = () => {
     MySwal.fire({
-      html: <OrderModal />,
+      html: <OrderModal imgSrc={imgSrc} title={title} priceP={priceP} priceK={priceK} />,
       showConfirmButton: false,
       customClass: {
         popup: 'order-modal',

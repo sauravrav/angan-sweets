@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ButtonTags from "./ButtonTags";
 import FoodCard from "./FoodCard";
+import { sweets } from "@/data/sweets";
 
 const foodTags = 
 [
@@ -18,16 +19,7 @@ const foodTags =
 ]
 
 const foodData = [
-    {
-        name: 'SWEETS',
-        listOfItems: [
-            {imgSrc: '/img/onion-tomato.jpeg',
-             title: 'Besan Plain Laddu',
-             priceP: 'Nrs. 70/pc',
-             priceK: 'Nrs. 1700/kg'
-        },
-        ]
-    },
+    {...sweets},
     {
         name: 'SNACKS',
         listOfItems: [

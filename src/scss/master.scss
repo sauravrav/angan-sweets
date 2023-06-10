@@ -264,6 +264,7 @@ body{
 }
 
 .food-card{
+    cursor: pointer;
     width: 100%;
     max-width: 360px;
     margin: 0 auto;
@@ -407,7 +408,6 @@ body{
     }
   }
   .order-form{
-    // border: 2px solid black;
     height: 500px;
     width: 100vw;
     border-radius: 10px;
@@ -418,6 +418,9 @@ body{
       padding: 10px;
       @include mobile-only {
         flex-direction: column;
+        .per-kg{
+          margin-top: 10px;
+        }
       }
     }
     .row{

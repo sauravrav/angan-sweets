@@ -1,20 +1,20 @@
 import Image from "next/image";
 
-const OrderModal = () => {
+const OrderModal = ({imgSrc, title, priceP, priceK}) => {
   return (
     <>
     <div className="order-modal">
       <div className="image-item">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={"/img/onion-tomato.jpeg"} alt="Besal plain laddu" />
+        <img src={imgSrc} alt="Besal plain laddu" />
       </div>
       <div className="order-form">
         <div className="order-details">
           <div>
-            <div>Kanpuri Laddu</div>
-            <div>Nrs. 64/pc</div>
+            <div >{title}</div>
+            <div style={{fontSize:'12px',color:'#fe0201'}}>{priceP}</div>
           </div>
-          <div>Nrs. 1600/kg</div>
+          <div className="per-kg" style={{color:'#fe0201'}}>{priceK}</div>
         </div>
         <div className="divider"></div>
         <form action="post">

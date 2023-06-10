@@ -3,6 +3,7 @@ import { searchData } from "../../data";
 import 'react-select-search/style.css'
 import Image from "next/image";
 import SearchComponent from "./searchComponent";
+import { sweets } from "@/data/sweets";
 
 const Navbar = () => {
     return ( 
@@ -12,7 +13,7 @@ const Navbar = () => {
                 <Image src='/img/logo.png' alt='logo' width={100} height={50}/>
             </div>
             <div className="search">
-            <SearchComponent items={searchData} />
+            <SearchComponent items={sweets.listOfItems} />
             </div>
             <div className="contacts">
                 Tripureshwor : 9802318809 / 01-4212502 <br />
