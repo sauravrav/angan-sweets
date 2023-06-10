@@ -1,16 +1,22 @@
-import ButtonTags from './ButtonTags'
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
+import OrderModal from './order-modal'
 
 const MySwal = withReactContent(Swal)
 
 const FoodCard = ({imgSrc, title, priceP, priceK}) => {
   const handleClick = () => {
     MySwal.fire({
-      title: <ButtonTags key={'ss'} title={'x.item'}  stat={'active'} />,
-    })
+      html: <OrderModal />,
+      showConfirmButton: false,
+      customClass: {
+        popup: 'order-modal',
+      },
+      width: 1000,
+      showCloseButton: true,
+    }).then(r => {})
   }
-    return ( 
+    return (
         <div className="food-card" onClick={handleClick}>
             <div className="product-img">
                   {/* eslint-disable-next-line @next/next/no-img-element */}

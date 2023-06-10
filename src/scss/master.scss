@@ -1,4 +1,4 @@
-@import 'helpers/master';
+@import 'helpers/master.scss';
 // base
 // components
 // layouts
@@ -369,6 +369,115 @@ body{
   /* Decrease to one column in small view */
   .menu-items {
     grid-template-columns: 1fr;
+  }
+}
+
+.divider {
+  height: 0px;
+  border: 1px solid #e6e6e6;
+  @include mobile-only {
+    width: 100%;
+  }
+}
+
+.order-modal{
+  display: flex;
+  // flex-wrap: wrap;
+  justify-content: space-between;
+  @include md{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .image-item{
+    img{
+      height: 450px;
+      width: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+      @include md{
+        width: 450px;
+      }
+      @include mobile-only{
+        height: 300px;
+        width: 300px;
+      }
+      
+    }
+  }
+  .order-form{
+    // border: 2px solid black;
+    height: 500px;
+    width: 100vw;
+    border-radius: 10px;
+    margin-left: 17px;
+    .order-details{
+      display: flex;
+      justify-content: space-around;
+      padding: 10px;
+      @include mobile-only {
+        flex-direction: column;
+      }
+    }
+    .row{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+      div{
+        margin: 10px 0;
+        input{
+          padding: 12px 40px;
+          border: 2px solid #e2e2e2;
+        }
+      }
+      .button{
+        background-color: #27d32a;
+        padding: 10px 30px;
+        font-size: 10px;
+        color: #fefeff;
+        font-weight: 400;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.order-from-phone{
+    padding: 10px 5px;
+    background: rgba(254, 2, 1, 0.1);
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    color: #222222;
+    width: fit-content;
+    div{
+      margin-right: 20px;
+      font-family: "Poppins", sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      color: #fe0201;
+    }
+}
+.footer{
+  margin-top: 10px;
+  background: #e1e1e1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  padding: 10px;
+  flex-wrap: wrap;
+  @include mobile-only{
+    justify-content: center;
+  }
+  .footer-items{
+    display: flex;
+
+    li{
+      margin: 0 10px;
+      list-style: none;
+    }
   }
 }
   
