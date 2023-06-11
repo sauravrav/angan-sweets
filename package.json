@@ -16,6 +16,7 @@
     "react-dom": "18.2.0",
     "sass": "^1.62.1",
     "sweetalert2": "^11.7.11",
-    "sweetalert2-react-content": "^5.0.7"
+    "sweetalert2-react-content": "^5.0.7",
+    "typeface-poppins": "^1.1.13"
   }
 }

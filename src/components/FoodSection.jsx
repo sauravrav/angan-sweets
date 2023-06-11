@@ -44,16 +44,6 @@ const foodData = [
     {...snacks},
     {...sweetbox},
     {...tawaTandoor},
-    {
-        name: 'SNACKS',
-        listOfItems: [
-            {imgSrc: '/img/onion-tomato.jpeg',
-             title: 'Kanpuri Laddu',
-             priceP: 'Nrs. 64/pc',
-             priceK: 'Nrs. 1900/kg'
-        },
-        ]
-    },
 ]
 
 const FoodSection = () => {
