@@ -1,9 +1,46 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Image from "next/image";
-
-const OrderModal = ({imgSrc, title, priceP, priceK}) => {
+const OrderMessage = ({name,mobileNumber,address,emailAddress, message}) => {
   return (
     <>
+      <h1>Thank you for you order</h1>
+      <h4>You will receive order confirmation call shortly</h4>
+      <div style={{listStyle:'none'}}>
+        <li>Name: <span style={{fontWeight:'900'}}>{name}</span></li>
+        <li>Number: <span style={{fontWeight:'900'}}>{mobileNumber}</span></li>
+        <li>Address: <span style={{fontWeight:'900'}}>{address}</span></li>
+        <li>E-mail: <span style={{fontWeight:'900'}}>{emailAddress}</span></li>
+        <li>message: <span style={{fontWeight:'900'}}>{message}</span></li>
+      </div>
+    </>
+  )
+}
+const OrderModal = ({imgSrc, title, priceP, priceK}) => {
+  const [showMessage, setShowMessage] = useState({fullName:'', mobileNumber:'', address:'', emailAddress:'',message:'', stat: false});
+  const {fullName, mobileNumber, address, emailAddress, message} = showMessage;
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target); // Get form data
+    
+    // Retrieve form values by their names
+    const fullName = formData.get('name');
+    const mobileNumber = formData.get('number');
+    const address = formData.get('address');
+    const emailAddress = formData.get('email-address');
+    const message = formData.get('your-message');
+    
+    // Log the form values (replace with your desired logic)
+    console.log('Full Name:', fullName);
+    console.log('Mobile Number:', mobileNumber);
+    console.log('Address:', address);
+    console.log('Email Address:', emailAddress);
+    console.log('Message:', message);
+    setShowMessage({fullName, mobileNumber, address, emailAddress, message, stat: true});
+  }
+  return (
+    <>
+    {
+      !showMessage.stat ? 
     <div className="order-modal">
       <div className="image-item">
         {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -18,7 +55,7 @@ const OrderModal = ({imgSrc, title, priceP, priceK}) => {
           <div className="per-kg" style={{color:'#fe0201'}}>{priceK}</div>
         </div>
         <div className="divider"></div>
-        <form action="post">
+        <form onSubmit={handleSubmit}>
           <div className="row">
             <div>
               <input
@@ -26,14 +63,16 @@ const OrderModal = ({imgSrc, title, priceP, priceK}) => {
                 id="name"
                 name="name"
                 placeholder="Full Name"
+                required
               />
             </div>
             <div>
               <input
-                type="text"
+                type="number"
                 id="number"
                 name="number"
                 placeholder="Mobile Number"
+                required
               />
             </div>
             <div>
@@ -60,13 +99,14 @@ const OrderModal = ({imgSrc, title, priceP, priceK}) => {
                 placeholder="Your Message"
                 />
             </div>
-            <div className="button">
+            <button className="button">
                 Order Now
-            </div>
+            </button>
           </div>
         </form>
       </div>
-    </div>
+    </div> : <OrderMessage name={fullName} mobileNumber={mobileNumber} address={address} emailAddress={emailAddress} message={message} />
+        }
     <div className="order-from-phone">
         <div>ORDER FROM PHONE:</div>
         <p>
