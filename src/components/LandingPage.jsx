@@ -10,18 +10,18 @@ const LandingPage = () => {
       imageSrc: "/assets/images/boondi-laddu-slider.png",
       title: "A Delicate Bundle of Joy",
       subtitle: "Mota Boondi Laddu",
-      // description: 'Make your moments sweeter with our flavoursome sweets made from fresh ingredients to savour your sweet tooth.',
-      description: "",
+      description: 'Make your moments sweeter with our flavoursome sweets made from fresh ingredients to savour your sweet tooth.',
+      // description: "",
       buttonText: "Order Now",
       priceP:'Nrs. 60/pc',
       priceK:'Nrs. 1500/kg'
     },
     {
       imageSrc: "/assets/images/barfi-slider.jpg",
-      title: "Relishing the Rich Taste of Fine Cashews",
+      title: "Rich Taste of Fine Cashews",
       subtitle: "Kaju Barfi",
-      // description: 'Choose among Angan\'s Sweets, Order Online and enjoy your sweet time at your home!',
-      description: "",
+      description: 'Choose among Angan\'s Sweets, Order Online and enjoy your sweet time at your home!',
+      // description: "",
       buttonText: "Order Now",
       priceP:'Nrs. 50/pc',
       priceK:'Nrs. 1950/kg'
@@ -59,13 +59,15 @@ const LandingPage = () => {
             </div>
             <div className="container">
               <div className="info-content">
-                <h3 className="page-title">
+                <h3 style={{backgroundColor:'orange'}} className="page-title">
                   {slide.title}
-                  <span className="inner-page-title orange">
-                    {slide.subtitle}
-                  </span>
                 </h3>
-                <p>{slide.description}</p>
+                <div className="inner-page-title orange">
+                  {slide.subtitle}
+                </div>
+                <div className="para">
+                  <p>{slide.description}</p>
+                </div>
                 <div
                   className="custom-button"
                   onClick={() =>
