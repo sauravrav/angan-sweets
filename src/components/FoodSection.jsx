@@ -51,11 +51,35 @@ const FoodSection = () => {
     const filteredData = foodData.filter((x) => x.name === activeButton)[0].listOfItems
     return ( <div className="second-page">
         <div className="intro">
-            <h1>Welcome to the official website of Angan Sweets Nepal</h1>
+            <h1>Welcome to the official website of <span style={{color:'#fe0201'}}>Angan Sweets Nepal</span></h1>
             <p>One stop location for all your cravings: Sweets, Namkeen, Snacks, Fast Food, Chaats and Bakery. Orders can be placed from the menu below.</p>
         </div>
+        <div className="banner-section">
+        <div class="grid-container">
+            <div class="grid-item">
+                <div className='add'>BALUWATAR</div>
+                <div className='num'>9802318809</div>
+            </div>
+            <div class="grid-item">
+                <div className='add'>BATTISPUTALI</div>
+                <div className='num'>9801975389</div>
+            </div>
+            <div class="grid-item">
+                <div className='add'>TRIPURESHWOR</div>
+                <div className='num'>9801847636</div>
+            </div>
+            <div class="grid-item">
+                <div className='add'>LAZIMPAT</div>
+                <div className='num'>9801847639</div>
+            </div>
+            <div class="grid-item center-item">
+                <div className='add'>SANEPA</div>
+                <div className='num'>9802346545</div>
+            </div>
+        </div>
+        </div>
         <div className="food-section">
-            <h2>EXPLORE OUR MENU</h2>
+            <h2>MENU</h2>
             <div className="food-tags">
                 {
                     foodTags.map((x)=>(

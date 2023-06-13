@@ -148,13 +148,23 @@ body{
       align-items: flex-start;
       row-gap: 10px;
       margin-left: 6px;
+      @include mobile-only{
+        align-items: center;
+      }
     }
     .para{
       text-align: initial;
       color: black;
+      font-weight: 600;
+      @include mobile-only{
+        margin-bottom: 10px;
+      }
       p{
         max-width: 526px;
         font-size: 17px;
+        @include mobile-only{
+          text-align: center;
+        }
       }
       @include mobile-only{
         background: rgba(0,0,0,0.5);
@@ -165,7 +175,7 @@ body{
     }
     @include mobile-only{
       width: 100%;
-      top: 50%;
+      top: 24%;
       left: 50%;
     }
   }
@@ -173,18 +183,18 @@ body{
   .page-title {
     font-size: 24px;
     font-weight: bold;
-    margin-bottom: 10px;
+    color: #4d443f;;
+    // margin-bottom: 10px;
     @include mobile-only{
-      font-size: 24px;
+      font-size: 28px;
     }
   }
   
   .inner-page-title {
     display: inline-block;
-    padding: 5px 10px;
-    background-color: orange;
     color: #fff;
     font-weight: bold;
+    font-size: 22px;
   }
   
   p {
@@ -208,6 +218,7 @@ body{
     -ms-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
     transition: all 0.2s linear;
+    margin-top: 10px;
   }
   
   .custom-button a:hover {
@@ -241,6 +252,42 @@ body{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  .banner-section{
+    margin-bottom: 20px;
+      .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 10px;
+      }
+
+      .grid-item {
+        background-color: #ff7801db;
+        padding: 20px;
+        width: 200px;
+        border-radius: 10px;
+        justify-self: center;
+        text-align: center;
+        color: whitesmoke;
+        box-shadow: 0px 15px 29px 0px rgb(203 191 188 / 80%);
+        @include mobile-only{
+          width: 120px;
+        }
+        .add{
+          font-size: 14px;
+          font-weight: 600;
+        }
+        .num{
+          font-size: 20px;
+          font-weight: 700;
+        }
+      }
+
+      .center-item {
+        grid-column: 1 / span 2;
+        text-align: center;
+      }
+  }
   .food-section{
     display: flex;
     flex-direction: column;
@@ -268,7 +315,8 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px;
+  padding: 40px 40px 20px 40px;
+  text-align: center;
 }
 
 .button-tag{

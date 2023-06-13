@@ -11,7 +11,6 @@ const LandingPage = () => {
       title: "A Delicate Bundle of Joy",
       subtitle: "Mota Boondi Laddu",
       description: 'Make your moments sweeter with our flavoursome sweets made from fresh ingredients to savour your sweet tooth.',
-      // description: "",
       buttonText: "Order Now",
       priceP:'Nrs. 60/pc',
       priceK:'Nrs. 1500/kg'
@@ -21,7 +20,6 @@ const LandingPage = () => {
       title: "Rich Taste of Fine Cashews",
       subtitle: "Kaju Barfi",
       description: 'Choose among Angan\'s Sweets, Order Online and enjoy your sweet time at your home!',
-      // description: "",
       buttonText: "Order Now",
       priceP:'Nrs. 50/pc',
       priceK:'Nrs. 1950/kg'
@@ -34,7 +32,7 @@ const LandingPage = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveSlide((prevSlide) => (prevSlide + 1) % slides.length);
-    }, 3000);
+    }, 5000);
 
     return () => {
       clearInterval(interval);
@@ -59,9 +57,9 @@ const LandingPage = () => {
             </div>
             <div className="container">
               <div className="info-content">
-                <h3 style={{backgroundColor:'orange'}} className="page-title">
+                <div className="page-title">
                   {slide.title}
-                </h3>
+                </div>
                 <div className="inner-page-title orange">
                   {slide.subtitle}
                 </div>
