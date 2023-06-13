@@ -5,6 +5,7 @@ import Navbar from '@/components/Navbar'
 import LandingPage from '@/components/LandingPage'
 import FoodSection from '@/components/FoodSection'
 import Image from 'next/image'
+import MapPoint from '@/components/MapPoint'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,6 +21,7 @@ export default function Home() {
       <Navbar />
       <LandingPage />
       <FoodSection />
+      <MapPoint />
       <div className="footer">
         <div className="logo">
             <Image src='/img/logo.png' alt='logo' width={100} height={50}/>

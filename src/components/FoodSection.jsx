@@ -55,24 +55,24 @@ const FoodSection = () => {
             <p>One stop location for all your cravings: Sweets, Namkeen, Snacks, Fast Food, Chaats and Bakery. Orders can be placed from the menu below.</p>
         </div>
         <div className="banner-section">
-        <div class="grid-container">
-            <div class="grid-item">
+        <div className="grid-container">
+            <div className="grid-item">
                 <div className='add'>BALUWATAR</div>
                 <div className='num'>9802318809</div>
             </div>
-            <div class="grid-item">
+            <div className="grid-item">
                 <div className='add'>BATTISPUTALI</div>
                 <div className='num'>9801975389</div>
             </div>
-            <div class="grid-item">
+            <div className="grid-item">
                 <div className='add'>TRIPURESHWOR</div>
                 <div className='num'>9801847636</div>
             </div>
-            <div class="grid-item">
+            <div className="grid-item">
                 <div className='add'>LAZIMPAT</div>
                 <div className='num'>9801847639</div>
             </div>
-            <div class="grid-item center-item">
+            <div className="grid-item center-item">
                 <div className='add'>SANEPA</div>
                 <div className='num'>9802346545</div>
             </div>
