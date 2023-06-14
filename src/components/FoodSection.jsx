@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react'
 import { useState } from "react";
 import ButtonTags from "./ButtonTags";
@@ -52,31 +53,26 @@ const FoodSection = () => {
     return ( <div className="second-page">
         <div className="intro">
             <h1>Welcome to the official website of <span style={{color:'#fe0201'}}>Angan Sweets Nepal</span></h1>
+            <div className="banner-section">
+                <div className="grid-container">
+                    <div className="grid-item">
+                        <img src="/img/baluwatar.png" alt="" />
+                    </div>
+                    <div className="grid-item">
+                        <img src="/img/battisputali.png" alt="" />
+                    </div>
+                    <div className="grid-item">
+                        <img src="/img/tripureshwor.png" alt="" />
+                    </div>
+                    <div className="grid-item">
+                        <img src="/img/lazimpat.png" alt="" />
+                    </div>
+                    <div className="grid-item center-item">
+                        <img src="/img/sanepa.png" alt="" />
+                    </div>
+                </div>
+            </div>
             <p>One stop location for all your cravings: Sweets, Namkeen, Snacks, Fast Food, Chaats and Bakery. Orders can be placed from the menu below.</p>
-        </div>
-        <div className="banner-section">
-        <div className="grid-container">
-            <div className="grid-item">
-                <div className='add'>BALUWATAR</div>
-                <div className='num'>9802318809</div>
-            </div>
-            <div className="grid-item">
-                <div className='add'>BATTISPUTALI</div>
-                <div className='num'>9801975389</div>
-            </div>
-            <div className="grid-item">
-                <div className='add'>TRIPURESHWOR</div>
-                <div className='num'>9801847636</div>
-            </div>
-            <div className="grid-item">
-                <div className='add'>LAZIMPAT</div>
-                <div className='num'>9801847639</div>
-            </div>
-            <div className="grid-item center-item">
-                <div className='add'>SANEPA</div>
-                <div className='num'>9802346545</div>
-            </div>
-        </div>
         </div>
         <div className="food-section">
             <h2>MENU</h2>
