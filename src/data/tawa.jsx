@@ -38,4 +38,46 @@ export const tawaTandoor = {
                 priceP: '',
                 priceK: 'Nrs. 225'
            },
+            {
+                imgSrc: `${tawaPath}/onion-masala-kulcha.jpg`,
+                title: 'Onion Masala Kulcha',
+                priceP: '',
+                priceK: 'Nrs. 225'
+           },
+            {
+                imgSrc: `${tawaPath}/lachha-pudina-parantha.jpeg`,
+                title: 'Lachha/Pudina Paratha',
+                priceP: '',
+                priceK: 'Nrs. 190'
+           },
+            {
+                imgSrc: `${tawaPath}/paneer-tikka.jpeg`,
+                title: 'Paneer Tikka',
+                priceP: '',
+                priceK: 'Nrs. 625'
+           },
+            {
+                imgSrc: `${tawaPath}/papad.webp`,
+                title: 'Papad',
+                priceP: '',
+                priceK: 'Nrs. 55'
+           },
+            {
+                imgSrc: `${tawaPath}/tandoori-aloo.webp`,
+                title: 'Tandoori Aloo',
+                priceP: '',
+                priceK: 'Nrs. 525'
+           },
+            {
+                imgSrc: `${tawaPath}/aloo-parantha.jpeg`,
+                title: 'Aloo Parantha With Raita',
+                priceP: '',
+                priceK: 'Nrs. 395'
+           },
+            {
+                imgSrc: `${tawaPath}/gampwcor.jpeg`,
+                title: 'Gobi Aan Muli Parantha With Chhola Or Raita',
+                priceP: '',
+                priceK: 'Nrs. 395'
+           },
         ]}
