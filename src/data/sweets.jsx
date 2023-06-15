@@ -305,7 +305,7 @@ export const sweets = {
         {
           imgSrc: `${sweetPath}/chenna roll.jpg`,
           title: 'Chenna Roll',
-          priceP: 'Nrs. 95/pc',
+          priceP: 'Nrs. 105/pc',
           priceK: '--'
         },
         {

@@ -110,7 +110,7 @@ const OrderModal = ({imgSrc, title, priceP, priceK}) => {
     <div className="order-from-phone">
         <div>ORDER FROM PHONE:</div>
         <p>
-            Baluwatar: 9801847636, 01-4417237, Tripureshwor: 9802318809, 01-4212502 , Lazimpat: 9801847639, 01-4511037, Battisputali: 9801975389, 01-5912892, Sanepa: 9802346545, 01-5916923
+            Baluwatar: 9801847636, 01-4417237, Tripureshwor: 9802318809, 01-5312502 , Lazimpat: 9801847639, 01-4511037, Battisputali: 9801975389, 01-5912892, Sanepa: 9802346545, 01-5916923
         </p>
     </div>
     <div className="footer">

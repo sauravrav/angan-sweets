@@ -41,7 +41,7 @@ const Navbar = () => {
                 <SearchComponent items={searchItems} />
             </div>
             <div className="contacts">
-                Tripureshwor : 9802318809 / 01-4212502 <br />
+                Tripureshwor : 9802318809 / 01-5312502  <br />
                 Lazimpat : 9801847639 / 01-4511037     <br />
                 Battisputali : 9801975389 / 01-5912892 <br />
                 Baluwatar: 9801847636 / 01-4417237      <br />
