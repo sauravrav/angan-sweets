@@ -38,4 +38,28 @@ export const sweetbox = {
                 priceP: '',
                 priceK: 'Nrs. 800/kg'
            },
+            {
+                imgSrc: `${sbPath}/kanpuri-laddu-half-kg.jpeg`,
+                title: 'Kaju Barfi 1 Kg',
+                priceP: '',
+                priceK: 'Nrs. 1950'
+           },
+            {
+                imgSrc: `${sbPath}/kanpuri-laddu-half-kg.jpeg`,
+                title: 'Kaju Barfi Half Kg',
+                priceP: '',
+                priceK: 'Nrs. 975'
+           },
+            {
+                imgSrc: `${sbPath}/kanpuri-laddu-half-kg.jpeg`,
+                title: 'Laddu Mix Box',
+                priceP: '',
+                priceK: 'Nrs. 690'
+           },
+            {
+                imgSrc: `${sbPath}/kanpuri-laddu-half-kg.jpeg`,
+                title: 'Premium Mix Sweets(Large)',
+                priceP: '',
+                priceK: 'Nrs. 1750'
+           },
         ]}
