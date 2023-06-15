@@ -38,4 +38,34 @@ export const snacks = {
                 priceP: 'Nrs. 45/pc',
                 priceK: '----'
            },
+            {
+                imgSrc: `${snacksPath}/vegetable cutlet.jpg`,
+                title: 'Vegetable Cutlet',
+                priceP: 'Nrs. 45/pc',
+                priceK: '----'
+           },
+            {
+                imgSrc: `${snacksPath}/sandwich dhokla.jpg`,
+                title: 'Sandwich Dhokla',
+                priceP: '----',
+                priceK: 'Nrs. 900/kg'
+           },
+            {
+                imgSrc: `${snacksPath}/VEGETABLE ROLL.jpg`,
+                title: 'Vegetable Roll',
+                priceP: 'Nrs. 35/pc',
+                priceK: '----'
+           },
+            {
+                imgSrc: `${snacksPath}/VEG PATTIES.jpg`,
+                title: 'Veg Patties',
+                priceP: 'Nrs. 80/pc',
+                priceK: '----'
+           },
+            {
+                imgSrc: `${snacksPath}/SAMOSA.jpg`,
+                title: 'Samosa',
+                priceP: 'Nrs. 35/pc',
+                priceK: '----'
+           },
         ]}
