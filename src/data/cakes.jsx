@@ -5,37 +5,73 @@ export const cakes = {
             {
                 imgSrc: `${cakesPath}/pineapple-cake.png`,
                 title: 'Pineapple Cake',
-                priceP: '--',
+                priceP: '',
                 priceK: 'Nrs. 1950/kg'
            },
             {
                 imgSrc: `${cakesPath}/eggless-blackforest-cake.png`,
                 title: 'Blackforest Cake',
-                priceP: '--',
+                priceP: '',
                 priceK: 'Nrs. 1950/kg'
            },
             {
                 imgSrc: `${cakesPath}/truffle-choco.png`,
                 title: 'Chocolate Truffle',
-                priceP: '--',
+                priceP: '',
                 priceK: 'Nrs. 1950/kg'
            },
             {
                 imgSrc: `${cakesPath}/butterscotch-cake.png`,
                 title: 'Butterscotch Cake',
-                priceP: '--',
+                priceP: '',
                 priceK: 'Nrs. 1950/kg'
            },
             {
                 imgSrc: `${cakesPath}/strawberry.png`,
                 title: 'Strawberry Cake',
-                priceP: '--',
+                priceP: '',
                 priceK: 'Nrs. 1950/kg'
            },
             {
                 imgSrc: `${cakesPath}/whiteforest.png`,
                 title: 'Whiteforest Cake',
-                priceP: '--',
+                priceP: '',
+                priceK: 'Nrs. 1950/kg'
+           },
+            {
+                imgSrc: `${cakesPath}/vanilla-cake.jpg`,
+                title: 'Vanilla Cake',
+                priceP: '',
+                priceK: 'Nrs. 1950/kg'
+           },
+            {
+                imgSrc: `${cakesPath}/vanilla-cake.jpg`,
+                title: 'Vanilla Cake',
+                priceP: '',
+                priceK: 'Nrs. 1950/kg'
+           },
+            {
+                imgSrc: `${cakesPath}/mango-cake.png`,
+                title: 'Mango Cake',
+                priceP: '',
+                priceK: 'Nrs. 1950/kg'
+           },
+            {
+                imgSrc: `${cakesPath}/blackberry.png`,
+                title: 'Blackberry Cake',
+                priceP: '',
+                priceK: 'Nrs. 1950/kg'
+           },
+            {
+                imgSrc: `${cakesPath}/orange-cake.png`,
+                title: 'Orange Cake',
+                priceP: '',
+                priceK: 'Nrs. 1950/kg'
+           },
+            {
+                imgSrc: `${cakesPath}/kiwi-cake.png`,
+                title: 'Kiwi Cake',
+                priceP: '',
                 priceK: 'Nrs. 1950/kg'
            },
         ]}
