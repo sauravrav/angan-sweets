@@ -15,6 +15,7 @@ import { southIndian } from "@/data/south";
 import { snacks } from "@/data/snacks";
 import { sweetbox } from "@/data/sweetbox";
 import { tawaTandoor } from "@/data/tawa";
+import { combos } from "@/data/combo";
 
 const foodTags = 
 [
@@ -30,6 +31,7 @@ const foodTags =
     {item:'TAWA & TANDOOR', stat: 'not-active'},
     {item:'CHINESE & CONTINENTAL', stat: 'not-active'},
     {item:'SWEET BOX', stat: 'not-active'},
+    {item:'COMBOS', stat: 'not-active'},
 ]
 
 const foodData = [
@@ -45,6 +47,7 @@ const foodData = [
     {...snacks},
     {...sweetbox},
     {...tawaTandoor},
+    {...combos}
 ]
 
 const FoodSection = () => {
