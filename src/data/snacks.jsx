@@ -27,6 +27,12 @@ export const snacks = {
                 priceK: 'Nrs. 850/kg'
            },
             {
+                imgSrc: `${snacksPath}/khandvi-dhokla.jpeg`,
+                title: 'Khandvi Dhokla',
+                priceP: 'Nrs. 35/pc',
+                priceK: 'Nrs. 175/kg'
+           },
+            {
                 imgSrc: `${snacksPath}/onion-kachauri.jpg`,
                 title: 'Onion Kachauri',
                 priceP: 'Nrs. 65/pc',

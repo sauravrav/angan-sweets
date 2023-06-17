@@ -45,12 +45,6 @@ export const cakes = {
                 priceK: 'Nrs. 1950/kg'
            },
             {
-                imgSrc: `${cakesPath}/vanilla-cake.jpg`,
-                title: 'Vanilla Cake',
-                priceP: '',
-                priceK: 'Nrs. 1950/kg'
-           },
-            {
                 imgSrc: `${cakesPath}/mango-cake.png`,
                 title: 'Mango Cake',
                 priceP: '',

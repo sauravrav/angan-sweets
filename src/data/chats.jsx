@@ -40,7 +40,7 @@ export const chats = {
            },
             {
                 imgSrc: `${chatsPath}/gupchup-chat.jpg`,
-                title: 'Gupchup Chaat',
+                title: 'GupChup Chaat',
                 priceP: '',
                 priceK: 'Nrs. 290'
            },

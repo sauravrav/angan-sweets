@@ -18,7 +18,7 @@ export const bakery = {
                 imgSrc: `${bakeryPath}/burger-bun.png`,
                 title: 'Burger Bun',
                 priceP: '',
-                priceK: 'Nrs. 100'
+                priceK: 'Nrs. 350'
            },
             {
                 imgSrc: `${bakeryPath}/pao-bun.png`,
@@ -46,7 +46,7 @@ export const bakery = {
            },
             {
                 imgSrc: `${bakeryPath}/wheat-bread.png`,
-                title: 'White Bread',
+                title: 'Wheat Bread',
                 priceP: '',
                 priceK: 'Nrs. 120'
            },

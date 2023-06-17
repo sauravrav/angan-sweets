@@ -239,8 +239,8 @@ export const sweets = {
         {
           imgSrc: `${sweetPath}/chocolate-sohan-papdi.jpg`,
           title: '250GM CHOCOLATE SOAN PAPDI',
-          priceP: 'Nrs. 395/pc',
-          priceK: '--'
+          priceP: '--',
+          priceK: 'Nrs. 395'
         },
         {
           imgSrc: `${sweetPath}/kesar bati.jpg`,
@@ -274,7 +274,7 @@ export const sweets = {
         },
         {
           imgSrc: `${sweetPath}/anjeer chikki.jpg`,
-          title: 'Agneer Chakki',
+          title: 'Angeer Chakki',
           priceP: 'Nrs. 70/pc',
           priceK: 'Nrs. 3150/kg'
         },
@@ -309,6 +309,18 @@ export const sweets = {
           priceK: '--'
         },
         {
+          imgSrc: `${sweetPath}/bikaneri moti pak.jpg`,
+          title: 'Bikaneri Motipak',
+          priceP: 'Nrs. 60/pc',
+          priceK: '1450/kg'
+        },
+        {
+          imgSrc: `${sweetPath}/chenna toast.jpg`,
+          title: 'Chenna Toast',
+          priceP: 'Nrs. 95/pc',
+          priceK: '--'
+        },
+        {
           imgSrc: `${sweetPath}/boondi-laddu-small.jpg`,
           title: 'Boondi Laddu (Small Box)',
           priceP: '--',
@@ -331,6 +343,12 @@ export const sweets = {
           title: 'Boondia',
           priceP: '--',
           priceK: 'Nrs. 1600/kg'
+        },
+        {
+          imgSrc: `${sweetPath}/mota bundi laddu.jpg`,
+          title: 'Mota Bundi Laddu',
+          priceP: 'Nrs. 64/pc',
+          priceK: 'Nrs. 1650/kg'
         },
         {
           imgSrc: `${sweetPath}/milk cake.jpg`,
@@ -359,7 +377,7 @@ export const sweets = {
         {
           imgSrc: `${sweetPath}/sohan halwa.jpg`,
           title: 'SOHAN HALWA 200GM',
-          priceP: 'Nrs. 150/pc',
+          priceP: 'Nrs. 215/pc',
           priceK: '--'
         },
         {
@@ -424,7 +442,7 @@ export const sweets = {
         },
         {
           imgSrc: `${sweetPath}/AnjeerCake.webp`,
-          title: 'Anjeer Cake',
+          title: 'Angeer Cake',
           priceP: 'Nrs. 65/pc',
           priceK: 'Nrs. 2450/kg'
         },
@@ -467,25 +485,25 @@ export const sweets = {
         {
           imgSrc: `${sweetPath}/56-bhog.jpg`,
           title: '56-Bhog-1pc',
-          priceP: 'Nrs. 3300/pc',
+          priceP: 'Nrs. 3300',
           priceK: '--'
         },
         {
           imgSrc: `${sweetPath}/56-bhog.jpg`,
           title: '56-Bhog-2pc',
-          priceP: 'Nrs. 6000/pc',
+          priceP: 'Nrs. 6000',
           priceK: '--'
         },
         {
           imgSrc: `${sweetPath}/56-bhog.jpg`,
           title: '56-Bhog-3pc',
-          priceP: 'Nrs. 9000/pc',
+          priceP: 'Nrs. 9000',
           priceK: '--'
         },
         {
           imgSrc: `${sweetPath}/56-bhog.jpg`,
           title: '56-Bhog-4pc',
-          priceP: 'Nrs. 11000/pc',
+          priceP: 'Nrs. 11000',
           priceK: '--'
         },
         {

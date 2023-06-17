@@ -10,13 +10,13 @@ export const tawaTandoor = {
            },
             {
                 imgSrc: `${tawaPath}/roti-makhni.jpg`,
-                title: 'Roti Makhn-',
+                title: 'Roti Makhni',
                 priceP: '',
                 priceK: 'Nrs. 125'
            },
             {
                 imgSrc: `${tawaPath}/missi-roti.jpg`,
-                title: 'Roti Makhni',
+                title: 'Missi Roti',
                 priceP: '',
                 priceK: 'Nrs. 150'
            },
@@ -42,7 +42,7 @@ export const tawaTandoor = {
                 imgSrc: `${tawaPath}/onion-masala-kulcha.jpg`,
                 title: 'Onion Masala Kulcha',
                 priceP: '',
-                priceK: 'Nrs. 225'
+                priceK: 'Nrs. 260'
            },
             {
                 imgSrc: `${tawaPath}/lachha-pudina-parantha.jpeg`,
@@ -76,8 +76,8 @@ export const tawaTandoor = {
            },
             {
                 imgSrc: `${tawaPath}/gampwcor.jpeg`,
-                title: 'Gobi Aan Muli Parantha With Chhola Or Raita',
+                title: 'Gobi And Muli Parantha With Chhola Or Raita',
                 priceP: '',
-                priceK: 'Nrs. 395'
+                priceK: 'Nrs. 405'
            },
         ]}
