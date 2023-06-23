@@ -1,5 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
+import axios from 'axios';
 import React, { useState } from 'react'
-import Image from "next/image";
 const OrderMessage = ({name,mobileNumber,address,emailAddress, message}) => {
   return (
     <>
@@ -35,6 +36,19 @@ const OrderModal = ({imgSrc, title, priceP, priceK}) => {
     console.log('Address:', address);
     console.log('Email Address:', emailAddress);
     console.log('Message:', message);
+    axios.post('https://angansweets.com/leadmail.php', {
+      fullName,
+      mobileNumber,
+      address,
+      emailAddress,
+      message
+    })
+    .then(function (response) {
+      console.log(response);
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
     setShowMessage({fullName, mobileNumber, address, emailAddress, message, stat: true});
   }
   return (
@@ -115,7 +129,7 @@ const OrderModal = ({imgSrc, title, priceP, priceK}) => {
     </div>
     <div className="footer">
         <div className="logo">
-            <Image src='/img/logo.png' alt='logo' width={100} height={50}/>
+            <img src='/img/logo.png' alt='logo' width={100} height={50}/>
         </div>
         <div className="footer-items">
             <li>Menu</li>

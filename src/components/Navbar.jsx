@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react'
 import Image from "next/image";
 import SearchComponent from "./searchComponent";
@@ -35,7 +36,7 @@ const Navbar = () => {
         <>
          <div className="navbar">
             <div className="logo">
-                <Image src='/img/logo.png' alt='logo' width={100} height={50}/>
+                <img src='/img/logo.png' alt='logo' width={100} height={50}/>
             </div>
             <div className="search">
                 <SearchComponent items={searchItems} />

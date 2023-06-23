@@ -40,7 +40,7 @@ const MapPoint = () => {
                 <img
                   src="assets/icons/logo-foodmandu.png"
                   alt="foodmandu"
-                  class="pathao-bottom"
+                  className="pathao-bottom"
                   width={80} height={20}
                 />
               </a>
