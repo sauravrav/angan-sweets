@@ -79,6 +79,20 @@ body{
       display: flex;
       align-items: center;
     }
+    .icon {
+      color: #3b5998; 
+    }
+    
+    .icon:hover {
+      color: #1877f2;
+    }
+    .instagram-icon {
+      fill: #c13584;
+    }
+    .social-icon{
+      font-size: 30px;
+      margin: 0 10px;
+    }
   
     @media (max-width: 768px) {
         padding: 0 10px;
@@ -90,6 +104,16 @@ body{
         margin: 26px;
       }
     }
+}
+.contacts{
+  font-size: 15px;
+  text-align: center;
+  padding: 5px;
+}
+@media (max-width: 768px) {
+.contacts {
+  display: none;
+}
 }
 .banner-cara {
     position: relative;

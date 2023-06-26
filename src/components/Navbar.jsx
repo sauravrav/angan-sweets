@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react'
-import Image from "next/image";
 import SearchComponent from "./searchComponent";
 import { sweets } from "@/data/sweets";
 import { bakery } from "@/data/bakery";
@@ -14,6 +13,7 @@ import { southIndian } from "@/data/south";
 import { snacks } from "@/data/snacks";
 import { sweetbox } from "@/data/sweetbox";
 import { tawaTandoor } from "@/data/tawa";
+import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa";
 
 const searchItems = [
     ...sweets.listOfItems,
@@ -42,13 +42,18 @@ const Navbar = () => {
                 <SearchComponent items={searchItems} />
             </div>
             <div className="contacts">
-                Tripureshwor : 9802318809 / 01-5312502  <br />
-                Lazimpat : 9801847639 / 01-4511037     <br />
-                Battisputali : 9801975389 / 01-5912892 <br />
-                Baluwatar: 9801847636 / 01-4417237      <br />
-                Sanepa 9802346545 / 01-5916923         <br />
+            <a href="https://www.facebook.com/AnganSweetsNepal?mibextid=ZbWKwL">
+                <FaFacebook className="icon social-icon"/>
+            </a>
+            <a href="https://instagram.com/angansweets?igshid=MzRlODBiNWFlZA==">
+                <FaInstagram className="instagram-icon social-icon"/>
+            </a>
+            <a href="https://www.tiktok.com/@angansweets?_t=8dUCfQzeemn&_r=1">
+                <FaTiktok className="social-icon"/>
+            </a>
             </div>
          </div>
+         <div className='contacts'>Tripureshwor : 9802318809 / 01-5312502 Lazimpat : 9801847639 / 01-4511037 Battisputali : 9801975389 / 01-5912892 Baluwatar: 9801847636 / 01-4417237 Sanepa 9802346545 / 01-5916923</div>
         </>
      );
 }
