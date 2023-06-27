@@ -37,14 +37,17 @@ body{
       .search-component {
         position: relative;
         display: inline-block;
-        // width: 200px;
   
         input {
           width: 100%;
           padding: 8px;
           font-size: 16px;
-          border: 1px solid #ccc;
-          border-radius: 4px;
+          border: none;
+          border-radius: 10px;
+          padding: 10px;
+          &:active {
+            border: 1px solid antiquewhite;
+          }
         }
         ul {
           position: absolute;
@@ -78,6 +81,9 @@ body{
     .contacts {
       display: flex;
       align-items: center;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px 0px rgba(249, 129, 105, 0.8);
+
     }
     .icon {
       color: #3b5998; 
@@ -106,13 +112,19 @@ body{
     }
 }
 .contacts{
-  font-size: 15px;
+  font-size: 10px;
   text-align: center;
   padding: 5px;
+  background-color: antiquewhite;
 }
 @media (max-width: 768px) {
 .contacts {
   display: none;
+}
+}
+@media (max-width: 940px) {
+.contacts {
+  font-size: 8px;
 }
 }
 .banner-cara {
