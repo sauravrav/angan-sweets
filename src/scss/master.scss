@@ -112,7 +112,7 @@ body{
     }
 }
 .contacts{
-  font-size: 10px;
+  font-size: 14px;
   text-align: center;
   padding: 5px;
   background-color: antiquewhite;
@@ -122,7 +122,17 @@ body{
   display: none;
 }
 }
-@media (max-width: 940px) {
+@media (max-width: 1335px) {
+.contacts {
+  font-size: 12px;
+}
+}
+@media (max-width: 1130px) {
+.contacts {
+  font-size: 11px;
+}
+}
+@media (max-width: 1030px) {
 .contacts {
   font-size: 8px;
 }
