@@ -3,7 +3,7 @@ export const sweets = {
         name: 'SWEETS',
         listOfItems: [
         {
-             imgSrc: `${sweetPath}/jalevi.jpg`,
+             imgSrc: `${sweetPath}/jalevi.png`,
              title: 'Jalebi',
              priceP: 'Nrs. 40/pc',
              priceK: 'Nrs. 1300/kg'
